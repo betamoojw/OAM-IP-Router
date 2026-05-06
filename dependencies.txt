@@ -5,3 +5,4 @@ cedaac3 v1dev lib/knx https://github.com/OpenKNX/knx.git
 55119fc v1 lib/OFM-UsbExchange https://github.com/OpenKNX/OFM-UsbExchange.git
 3762bc1 v1dev lib/OGM-Common https://github.com/OpenKNX/OGM-Common.git
 2af139a v1 lib/OGM-HardwareConfig https://github.com/OpenKNX/OGM-HardwareConfig.git
+419f08d main lib/tpuart https://github.com/OpenKNX/tpuart.git
