@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="../../Organization/knxprod-support/knx_project_20/knx.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<KNX xmlns:op="http://github.com/OpenKNX/OpenKNXproducer" xmlns="http://knx.org/xml/project/20" CreatedBy="OpenKNXproducer" ToolVersion="4.0.3.0">
+<KNX xmlns:op="http://github.com/OpenKNX/OpenKNXproducer" xmlns="http://knx.org/xml/project/20" CreatedBy="OpenKNXproducer" ToolVersion="4.3.5.0">
   <ManufacturerData>
     <Manufacturer RefId="M-00FA">
       <Catalog>
@@ -314,15 +314,18 @@
               <Parameter Id="M-00FA_A-A11E-75-0000_P-1000042" Name="BASE_Info3LedFuncNotice" ParameterType="M-00FA_A-A11E-75-0000_PT-Text80Byte" Text="" Value="" />
               <Parameter Id="M-00FA_A-A11E-75-0000_P-1000049" Name="BASE_ShowLedFuncTable" ParameterType="M-00FA_A-A11E-75-0000_PT-CheckBox" Text="" Value="1" Access="None" />
               <Union SizeInBit="32">
+                <!-- Union 0 -->
                 <Memory CodeSegment="M-00FA_A-A11E-75-0000_AS-0100" Offset="0" BitOffset="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1000002" Name="BASE_StartupDelayBase" ParameterType="M-00FA_A-A11E-75-0000_PT-DelayBase" Offset="0" BitOffset="0" Text="Zeitbasis" Value="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1000003" Name="BASE_StartupDelayTime" ParameterType="M-00FA_A-A11E-75-0000_PT-DelayTimeMin1" Offset="0" BitOffset="2" Text="Zeit" Value="1" />
               </Union>
               <Union SizeInBit="16">
+                <!-- Union 1 -->
                 <Memory CodeSegment="M-00FA_A-A11E-75-0000_AS-0100" Offset="4" BitOffset="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1000147" Name="BASE_Watchdog" ParameterType="M-00FA_A-A11E-75-0000_PT-OnOffYesNo" Offset="1" BitOffset="1" Text="Watchdog aktivieren" Value="1" />
               </Union>
               <Union SizeInBit="56">
+                <!-- Union 2 -->
                 <Memory CodeSegment="M-00FA_A-A11E-75-0000_AS-0100" Offset="6" BitOffset="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1000020" Name="BASE_Info1LedFunc" ParameterType="M-00FA_A-A11E-75-0000_PT-SLEDFunc" Offset="0" BitOffset="0" Text="Info1 (N/A)" Value="0" Access="ReadWrite" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1000021" Name="BASE_Info2LedFunc" ParameterType="M-00FA_A-A11E-75-0000_PT-SLEDFunc" Offset="2" BitOffset="0" Text="Info2 (IP)" Value="10" Access="ReadWrite" />
@@ -330,6 +333,7 @@
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1000029" Name="BASE_DefaultLedFunc" ParameterType="M-00FA_A-A11E-75-0000_PT-CheckBox" Offset="6" BitOffset="0" Text="" Value="0" />
               </Union>
               <Union SizeInBit="520">
+                <!-- Union 3 -->
                 <Memory CodeSegment="M-00FA_A-A11E-75-0000_AS-0100" Offset="13" BitOffset="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1000144" Name="BASE_Timezone" ParameterType="M-00FA_A-A11E-75-0000_PT-Timezone" Offset="0" BitOffset="0" Text="Zeitzone" Value="1" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1000156" Name="BASE_CombinedTimeDate" ParameterType="M-00FA_A-A11E-75-0000_PT-CombinedTimeDate" Offset="0" BitOffset="5" Text="Empfangen über" Value="1" />
@@ -342,6 +346,7 @@
               <Parameter Id="M-00FA_A-A11E-75-0000_P-1101001" Name="NET_WifiSSID" ParameterType="M-00FA_A-A11E-75-0000_PT-WifiSSID" Text="SSID" Value="" />
               <Parameter Id="M-00FA_A-A11E-75-0000_P-1101002" Name="NET_WifiPassword" ParameterType="M-00FA_A-A11E-75-0000_PT-WifiPassword" Text="PSK" Value="" />
               <Union SizeInBit="128">
+                <!-- Union 4 -->
                 <!-- 16bytes-->
                 <Memory CodeSegment="M-00FA_A-A11E-75-0000_AS-0100" Offset="78" BitOffset="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1100011" Name="NET_HostAddress" ParameterType="M-00FA_A-A11E-75-0000_PT-HostAddress" Offset="0" BitOffset="0" Text="IP-Adresse" Value="192.168.178.2" />
@@ -351,12 +356,14 @@
                 <!-- Reserved for Nameserver 2 -->
               </Union>
               <Union SizeInBit="8">
+                <!-- Union 5 -->
                 <Memory CodeSegment="M-00FA_A-A11E-75-0000_AS-0100" Offset="94" BitOffset="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1100001" Name="NET_CustomHostname" ParameterType="M-00FA_A-A11E-75-0000_PT-OnOffYesNo" Offset="0" BitOffset="0" Text="Hostname anpassen" Value="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1100002" Name="NET_StaticIP" ParameterType="M-00FA_A-A11E-75-0000_PT-OnOffYesNoInverted" Offset="0" BitOffset="1" Text="DHCP" Value="0" />
                 <!-- 6 bits free -->
               </Union>
               <Union SizeInBit="8">
+                <!-- Union 6 -->
                 <Memory CodeSegment="M-00FA_A-A11E-75-0000_AS-0100" Offset="95" BitOffset="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1100031" Name="NET_mDNS" ParameterType="M-00FA_A-A11E-75-0000_PT-OnOffYesNo" Offset="0" BitOffset="0" Text="mDNS" Value="1" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1100032" Name="NET_HTTP" ParameterType="M-00FA_A-A11E-75-0000_PT-OnOffYesNo" Offset="0" BitOffset="1" Text="Weberver" Value="1" />
@@ -369,10 +376,12 @@
                 <!-- 192bits / 24bytes-->
               </Parameter>
               <Union SizeInBit="8">
+                <!-- Union 7 -->
                 <Memory CodeSegment="M-00FA_A-A11E-75-0000_AS-0100" Offset="137" BitOffset="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1100052" Name="NET_LanMode" ParameterType="M-00FA_A-A11E-75-0000_PT-LanMode" Offset="0" BitOffset="0" Text="LAN-Modus" Value="0" />
               </Union>
               <Union SizeInBit="408">
+                <!-- Union 8 -->
                 <Memory CodeSegment="M-00FA_A-A11E-75-0000_AS-0100" Offset="138" BitOffset="0" />
                 <Parameter Id="M-00FA_A-A11E-75-0000_UP-1100061" Name="NET_NTPServer" ParameterType="M-00FA_A-A11E-75-0000_PT-NTPServer" Offset="0" BitOffset="0" Text="Zeitserver" Value="pool.ntp.org" />
                 <!-- 50 characters + 0 terminator = 51 bytes used -->
@@ -1698,13 +1707,13 @@ function sendWifiSettings(device, online, progress, context) {
       </ApplicationPrograms>
       <Baggages>
         <Baggage TargetPath="A1\1E\75" Name="ets.png" Id="M-00FA_BG-A1.5C1E.5C75-ets.2Epng">
-          <FileInfo TimeInfo="2026-03-05T16:13:48.3277953Z" />
+          <FileInfo TimeInfo="2026-05-06T07:07:37.1051697Z" />
         </Baggage>
         <Baggage TargetPath="A1\1E\75" Name="Help_de.zip" Id="M-00FA_BG-A1.5C1E.5C75-Help.5Fde.2Ezip">
-          <FileInfo TimeInfo="2026-03-05T16:13:48.5138009Z" />
+          <FileInfo TimeInfo="2026-05-06T07:07:39.8192964Z" />
         </Baggage>
         <Baggage TargetPath="A1\1E\75" Name="Icons.zip" Id="M-00FA_BG-A1.5C1E.5C75-Icons.2Ezip">
-          <FileInfo TimeInfo="2026-03-05T16:13:48.6951614Z" />
+          <FileInfo TimeInfo="2026-05-06T07:07:40.1602966Z" />
         </Baggage>
       </Baggages>
       <Hardware>

@@ -1,1 +1,2 @@
-#include "HardwareConfig/OpenKNX/REG1.h"
+#pragma once
+#include "HardwareConfig.h"
